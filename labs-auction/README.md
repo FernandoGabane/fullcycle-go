@@ -32,10 +32,10 @@ Acesse: [http://localhost:8000](http://localhost:8000) (ou a porta configurada).
 
 ```bash
 curl -X POST http://localhost:8000/auction   -H "Content-Type: application/json"   -d '{
-    "product_name": "Celular",
-    "category": "Eletrônicos",
-    "description": "iPhone seminovo",
-    "condition": 2
+    "product_name": "MotoLoLa",
+    "category": "Eletlonico",
+    "description": "abliu tem que leva",
+    "condition": 10
 }'
 ```
 

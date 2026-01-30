@@ -34,7 +34,7 @@ Crie uma conta gratuita em https://www.weatherapi.com e copie sua **API Key**.
 
 No serviço `service-b`, a variável de ambiente `WEATHER_API_KEY` precisa estar configurada. Existem duas formas:
 
-#### ✅ Opção recomendada (via terminal):
+#### Opção recomendada (via terminal):
 ```bash
 WEATHER_API_KEY=<SUA_CHAVE_WEATHERAPI> docker-compose up --build
 ```
@@ -67,6 +67,6 @@ curl -X POST http://localhost:8080/cep \
 
 Abra no navegador:
 
-👉 [http://localhost:9411](http://localhost:9411)
+[http://localhost:9411](http://localhost:9411)
 
 Você verá os **traces entre os serviços** A → B, com detalhes de duração, spans e tempo gasto em chamadas externas (viaCEP, WeatherAPI).
