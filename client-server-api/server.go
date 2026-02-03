@@ -12,9 +12,9 @@ import (
 )
 
 type CotacaoResponse struct {
-	BID struct {
+	USDBRL struct {
 		Bid string `json:"bid"`
-	} `json:"BID"`
+	}
 }
 
 func main() {
@@ -65,7 +65,7 @@ func main() {
 
 		_, err = db.ExecContext(ctxDB,
 			"INSERT INTO cotacao (bid) VALUES (?)",
-			cotacao.BID.Bid,
+			cotacao.USDBRL.Bid,
 		)
 		if err != nil {
 			log.Println("DB timeout or error:", err)
@@ -73,7 +73,7 @@ func main() {
 
 		w.Header().Set("Content-Type", "application/json")
 		json.NewEncoder(w).Encode(map[string]string{
-			"bid": cotacao.BID.Bid,
+			"bid": cotacao.USDBRL.Bid,
 		})
 	})
 
