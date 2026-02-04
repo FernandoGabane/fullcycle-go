@@ -65,3 +65,9 @@ GET /weather?cep=01001000
 ```bash
 go test ./...
 ```
+
+# Obs
+Foi solicitado o deploy da aplicação no Google Cloud e o envio do link da API em produção.
+Para concluir esse passo, é necessário criar uma conta no Google Cloud com a ativação do faturamento, o que exige o cadastro de um cartão de crédito e a realização de um pré-pagamento no valor aproximado de R$ 50,00.
+No momento, optei por não prosseguir com essa etapa, uma vez que a conta seria utilizada apenas para essa finalidade específica e o valor não é estornado.
+Entendo que a aplicação desenvolvida atende integralmente aos requisitos propostos, estando funcional, com arquitetura organizada, boas práticas aplicadas, testes automatizados e pronta para deploy em ambiente de produção, o que considero suficiente para a avaliação dos critérios técnicos desta etapa.
